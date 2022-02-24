@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JioSaavn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <nav>
+            <div id="logo">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1192 250" xml:space="preserve"><path d="M621.7,136.7c-6.4-6.8-18.8-13.6-37.1-20.4c-13.3-5-22.3-8.9-27-11.6c-4.7-2.7-8.1-5.5-10.2-8.4c-2.1-2.9-3.2-6.5-3.2-10.7c0-6.2,2.8-11,8.4-14.5c5.6-3.5,14-5.3,25-5.3c11,0,23.1,2.5,36.3,7.4c6.2,2.6,7.7-2.1,7.7-2.1l4.1-9.5c0,0,3-5.6-3.3-7.6c-14.1-5.3-28.4-8-43.1-8c-17.8,0-31.8,3.7-42.1,11.1C527.1,64.4,522,74.5,522,87.2c0,7.1,1.5,13.3,4.4,18.4c3,5.1,7.5,9.7,13.5,13.8c6,4,16.2,8.8,30.6,14.2c15.1,5.9,25.3,11,30.5,15.3c5.2,4.3,7.8,9.5,7.8,15.6c0,8.1-3.3,14.1-9.8,18c-6.6,3.9-15.9,5.9-28.1,5.9c-7.9,0-16.1-1.1-24.6-3.3c-3-0.8-7.5-2.3-11-3.5c-6.1-2.3-7.3,3.1-7.3,3.1l-3.3,7.9c0,0-3.3,5.2,2.4,7.9c11,5,25.3,7.4,43.1,7.4c19.3,0,34.3-3.9,45-11.8c10.7-7.9,16-19.1,16-33.7C631.3,152.2,628.1,143.6,621.7,136.7z"></path><path d="M1001.4,201.8c8.1-21.5,47.3-127.3,55.6-149.3c2.1-4.8-3.3-4.1-3.3-4.1h-16.7c0,0-3.3-0.6-4.9,3.8c-18.4,51.1-30.2,84.9-35.6,100.3c-5.5,15.8-8.8,26.3-9.8,31.3h-1.1c-1.3-6.5-5.7-20.5-13.2-42.2c0,0-25.8-72.5-31.9-89.5c-1.5-4.1-5.1-3.6-5.1-3.6h-17.5c0,0-4.2-0.7-2.3,4c8.2,21.8,47.4,127.6,55.6,149.3c1.3,3.4,3.9,4,3.9,4h22C997,205.7,1000.1,205.1,1001.4,201.8z"></path><path d="M1192,200.9c0-20.3,0-97.5,0-97.5c0-19.9-4.6-34.4-14-43.5c-9.4-9.1-20.3-13.6-38.9-13.6c-10.6,0-20.2,2.1-28.8,6.3c-8.6,4.2-15.3,10.2-20.1,17.9h-1.1c0,0-2.2-13-3.2-18.8c-0.6-3.4-4.1-3-4.1-3h-11.6c0,0-3.9-0.5-3.9,3.9c0,21.4,0,125,0,148.3c0,5.1,3.8,4.7,3.8,4.7h15.6c0,0,3.9,0.4,3.9-4.7c0-16.2,0-77.6,0-77.6c0-20.3,4-34.9,11.5-43.7c7.5-8.8,19.3-13.2,35.4-13.2c12.2,0,18.1,3.1,23.9,9.4c5.7,6.3,8.6,15.7,8.6,28.5c0,0,0,76.6,0,96.6c0,5.3,3.8,4.8,3.8,4.8h15.6C1188.2,205.7,1192,206.2,1192,200.9z"></path><path d="M911.2,202.7c0-16.9,0-104.2,0-104.2c0-18.3-5.2-31.5-14.1-39.8c-8.9-8.3-24.4-12.4-42.7-12.4c-9.1,0-18.2,1.2-27.2,3.6c-7.5,2-14.5,4.5-20.9,7.7c-5.3,2.1-2.6,5.8-2.6,5.8l4.1,10.3c0,0,0.7,4.4,7.2,1.5c14-6.2,26.7-9.4,38.1-9.4c11.4,0,21.6,2.9,26.8,8.8c5.2,5.8,7.8,14.9,7.8,27.2v9.7l-28,0.9c-49.8,1.5-74.7,18.1-74.7,49.6c0,14.7,4.3,26.1,13,34.1c8.7,8,20.7,12,35.9,12c11.4,0,22.9-0.2,30.6-3.6c7.6-3.5,17.2-9.7,24.9-19.5h2.1c0,0,0.4,12.3,0.7,17.8c0.1,2.8,2.8,2.9,2.8,2.9h13.5C908.3,205.6,911.2,205.7,911.2,202.7z M817,181.8c-5.1-4.5-7.7-11-7.7-19.5c0-10.9,4.1-19,12.3-24.2c8.2-5.2,21.6-8.1,40.2-8.8l25.2-1v14.1c0,14.5-4.2,25.9-12.5,33.9c-8.3,8.1-21.6,12.1-36.1,12.1C829.3,188.5,822.2,186.2,817,181.8z"></path><path d="M768.9,202.7c0-16.9,0-104.2,0-104.2c0-18.3-5.2-31.5-14.1-39.8c-8.9-8.3-24.4-12.4-42.7-12.4c-9.1,0-18.2,1.2-27.2,3.6c-7.5,2-14.5,4.5-20.9,7.7c-5.3,2.1-2.6,5.8-2.6,5.8l4.1,10.3c0,0,0.7,4.4,7.2,1.5c14-6.2,26.7-9.4,38.1-9.4c11.4,0,21.6,2.9,26.8,8.8c5.2,5.8,7.8,14.9,7.8,27.2v9.7l-28,0.9c-49.8,1.5-74.7,18.1-74.7,49.6c0,14.7,4.3,26.1,13,34.1c8.7,8,20.7,12,35.9,12c11.4,0,22.9-0.2,30.6-3.6c7.6-3.5,17.2-9.7,24.9-19.5h2.1c0,0,0.4,12.3,0.7,17.8c0.1,2.8,2.8,2.9,2.8,2.9H766C766,205.6,768.9,205.7,768.9,202.7z M674.7,181.8c-5.1-4.5-7.7-11-7.7-19.5c0-10.9,4.1-19,12.3-24.2c8.2-5.2,21.6-8.1,40.2-8.8l25.2-1v14.1c0,14.5-4.2,25.9-12.5,33.9c-8.3,8.1-21.6,12.1-36.1,12.1C687,188.5,679.8,186.2,674.7,181.8z"></path><path d="M483.7,36c-5.4-14.7-17-26.4-31.7-31.7C438.5,0,425.9,0,400.8,0h-75.7c-25.1,0-37.6,0-51.2,4.3c-14.7,5.4-26.4,17-31.7,31.7c-0.8,2.6-1.5,5.1-2,7.7c5.5,7.7,10.2,16.1,14,24.9c0.4-9.6,1.3-17.2,3.5-24.1c4.7-12.9,11.9-20.1,24.7-24.7C294.2,16,308.1,16,330,16h66c21.9,0,35.8,0,47.5,3.7c12.9,4.7,20.1,11.9,24.7,24.7C472,56.3,472,70.1,472,92v66c0,21.9,0,35.8-3.7,47.5c-4.7,12.9-11.9,20.1-24.7,24.7c-11.8,3.7-25.7,3.7-47.5,3.7h-66c-21.9,0-35.8,0-47.5-3.7c-12.9-4.7-20.1-11.9-24.7-24.7c-2.2-6.9-3.1-14.6-3.5-24.2c-3.8,8.8-8.5,17.1-14,24.9c0.5,2.6,1.2,5.2,2,7.8c5.4,14.7,17,26.4,31.7,31.7c13.5,4.3,26.1,4.3,51.2,4.3h75.7c25.1,0,37.6,0,51.2-4.3c14.7-5.4,26.4-17,31.7-31.7c4.3-13.5,4.3-26.1,4.3-51.2V87.2C488,62.1,488,49.5,483.7,36z"></path><path d="M422,217c0,0-24.5,0-41.7,0c-1.8,0-5.8-2.8-2.6-6.7c21.4-23,48-30.9,73.4-39.4c3.3-1,3.9,2.5,3.9,3.5c0,8.1,0,8.7,0,8.7C455,202.6,441.6,217,422,217z M343.7,212.7c-4-29.7-18.1-80.8-71-118.6c-0.8-0.6-1.7-1.3-1.7-3.5c0-8.7,0-24.3,0-24.3c0-26.7,18-33.3,26.4-33.3c1.7,0,3.1,0.4,4.1,2.1c25.2,55,41,89.9,50.7,172.8c0.1,1.6,0.3,2.4,1.3-0.1c6.9-15.1,39.3-92,26.4-170.7c-0.3-2.7,1.8-4.2,3.5-4.2c13.3,0,38.6,0,38.6,0c19.5,0,33,13.4,33,33.4c0,0,0,24.5,0,34.1c0,0.8-0.2,2.4-2.1,3.4c-59.8,31.2-82.3,82.1-90.3,109.2c-0.8,2.2-1.2,3.9-3.7,3.9c-3.2,0-8.5,0-11.8,0C344.8,217,344.3,216,343.7,212.7z M304.3,217c-20,0-33.3-12.4-33.3-33.9c0,0,0,4.2,0-2.2c0-0.9,0.7-4.3,4.1-3.6c20.2,6.2,41.9,12.5,57.8,33.5c1.8,2.6,0.2,6.3-2.9,6.3C316.9,217,304.3,217,304.3,217z"></path><ellipse transform="matrix(6.023686e-03 -1 1 6.023686e-03 -0.748 249.2415)" fill="#FFFFFF" cx="125" cy="125" rx="115.2" ry="115.3"></ellipse><path fill="#2BC5B4" d="M180.8,114.6c-8.6,0-15.6,7.4-15.6,16.5c0,9.1,7,16.5,15.6,16.5c8.6,0,15.6-7.4,15.6-16.5C196.4,122,189.4,114.6,180.8,114.6z"></path><path fill="#2BC5B4" d="M125,0C56,0,0,56,0,125s56,125,125,125c69,0,125-56,125-125S194,0,125,0z M95.4,132.1c0,63.8-101.7,35.7-60.5,2.9c9.7,13.4,28.2,12.5,30.2-0.7l0.4-52.1c1-13.3,26.9-15.9,30,0V132.1z M133.3,156.3c0,6.6-5.4,12-12,12h-5.2c-6.6,0-12-5.4-12-12V106c0-6.6,5.4-12,12-12h5.2c6.6,0,12,5.4,12,12V156.3z M133.3,74.6c0,6.5-5.3,11.8-11.8,11.8h-5.6c-6.5,0-11.8-5.3-11.8-11.8v-2.9c0-6.5,5.3-11.8,11.8-11.8h5.6c6.5,0,11.8,5.3,11.8,11.8V74.6z M180.8,169.9c-22,0-39.8-17.4-39.8-38.8c0-21.4,17.8-38.8,39.8-38.8c22,0,39.8,17.4,39.8,38.8C220.6,152.5,202.8,169.9,180.8,169.9z"></path></svg>    
+            </div>
+            <div id="nav-left">
+                <ul>
+                    <li><a href="#" class="nav-option">Home</a></li>
+                    <li><a href="#" class="nav-option">Browse</a></li>
+                    <li><a href="#" class="nav-option">Upgrade</a></li>
+                </ul>
+            </div>
+            <div id="search-bar">
+                <a href="#" class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Search...what you feel..!</a>
+            </div>
+            <div id="nav-right">
+                <ul>
+                    <li><a href="#" class="nav-option">Music Languages
+                        <i class="fa-solid fa-chevron-down"></i> </a>
+                    </li>
+                    <li><a href="#" class="nav-option">Log In</a></li>
+                    <li><a href="#" class="nav-option">Sign Up</a></li>
+                </ul>    
+            </div>
+        </nav>
+        <main id="main-page">
+
+            <aside id="aside-left" >
+                <div id="library">
+                    <span>LIBRARY</span>
+                    <ul>
+                        <li><a href="#" >
+                            <i class="fa-solid fa-clock-rotate-left "></i>
+                            History
+                        </a></li>
+                        <li><a href="#" >
+                            <i class="fa-solid fa-music "></i>
+                            Songs
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa-solid fa-compact-disc "></i>
+                            Albums
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa-solid fa-podcast "></i>
+                            Podcasts
+                        </a></li>
+                        <li><a href="#" >
+                            <!-- <i class="fa-solid fa-pencil"></i> -->
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            Artists
+                        </a></li>
+                    </ul>
+                    <div id="add-playlist">
+                        <a href="#">+ New Playlist</a>
+                    </div>
+                </div>
+                
+                
+            </aside>
+
+            <section id="main-container">
+
+                <div id="empty-div"></div>
+                <div id="trending">
+                    <h1>Trending Now</h1>
+                    <div id="trending-row-1">
+                        <div class="img-box"><img src="sample-image/Thangameenkal-Tamil-2013-20190822133709-500x500.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Anirudh_Ravichander_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/AnirudhRomanticHitsTamil_20210215182951_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/sample-img.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Hits-Of-A-R-Rahman-Tamil-2015-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/MasterWorks-Na-Muthukumar-Tamil-2016-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/YuvanRomanticHits_20210507163318_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Chartbusters2021English_20211201172126_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                    </div>
+                    <div id="trending-row-2">
+                        <div class="img-box"><img src="sample-image/MasterWorks-Na-Muthukumar-Tamil-2016-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/EDMUplift_20220130171256_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Hits-Of-A-R-Rahman-Tamil-2015-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Thangameenkal-Tamil-2013-20190822133709-500x500.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/YuvanRomanticHits_20210507163318_150x150.jpg"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Chartbusters2021English_20211201172126_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/sample-img.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/MostSearchedSongsEnglish_20220208180035_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                    </div>
+                </div>
+                <div id="empty-div"></div>
+                <div id="top-charts">
+                    <h1>Top Charts</h1>
+                    <div id="trending-row-1">
+                        <div class="img-box"><img src="sample-image/Thangameenkal-Tamil-2013-20190822133709-500x500.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Anirudh_Ravichander_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/AnirudhRomanticHitsTamil_20210215182951_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/sample-img.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Hits-Of-A-R-Rahman-Tamil-2015-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/MasterWorks-Na-Muthukumar-Tamil-2016-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/YuvanRomanticHits_20210507163318_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Chartbusters2021English_20211201172126_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>                    
+                    </div>
+                    <div id="trending-row-2">
+                        <div class="img-box"><img src="sample-image/MasterWorks-Na-Muthukumar-Tamil-2016-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/EDMUplift_20220130171256_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Hits-Of-A-R-Rahman-Tamil-2015-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Thangameenkal-Tamil-2013-20190822133709-500x500.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/YuvanRomanticHits_20210507163318_150x150.jpg"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Chartbusters2021English_20211201172126_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/sample-img.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/MostSearchedSongsEnglish_20220208180035_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                    </div>
+                </div>
+                <div id="empty-div"></div>
+                <div id="new-release">
+                    <h1>New Releases</h1>
+                    <div id="trending-row-1">
+                        <div class="img-box"><img src="sample-image/Thangameenkal-Tamil-2013-20190822133709-500x500.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Anirudh_Ravichander_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/AnirudhRomanticHitsTamil_20210215182951_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/sample-img.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Hits-Of-A-R-Rahman-Tamil-2015-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/MasterWorks-Na-Muthukumar-Tamil-2016-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/YuvanRomanticHits_20210507163318_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Chartbusters2021English_20211201172126_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                    </div>
+                    <div id="trending-row-2">
+                        <div class="img-box"><img src="sample-image/MasterWorks-Na-Muthukumar-Tamil-2016-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/EDMUplift_20220130171256_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Hits-Of-A-R-Rahman-Tamil-2015-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Thangameenkal-Tamil-2013-20190822133709-500x500.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/YuvanRomanticHits_20210507163318_150x150.jpg"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Chartbusters2021English_20211201172126_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/sample-img.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/MostSearchedSongsEnglish_20220208180035_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                    </div>
+                </div>
+                <div id="empty-div"></div>
+                <div id="editorial-picks">
+                    <h1>Editorial Picks</h1>
+                    <div id="trending-row-1">
+                        <div class="img-box"><img src="sample-image/Thangameenkal-Tamil-2013-20190822133709-500x500.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Anirudh_Ravichander_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/AnirudhRomanticHitsTamil_20210215182951_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/sample-img.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Hits-Of-A-R-Rahman-Tamil-2015-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/MasterWorks-Na-Muthukumar-Tamil-2016-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/YuvanRomanticHits_20210507163318_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Chartbusters2021English_20211201172126_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                    </div>
+                    <div id="trending-row-2">
+                        <div class="img-box"><img src="sample-image/MasterWorks-Na-Muthukumar-Tamil-2016-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/EDMUplift_20220130171256_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Hits-Of-A-R-Rahman-Tamil-2015-150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Thangameenkal-Tamil-2013-20190822133709-500x500.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/YuvanRomanticHits_20210507163318_150x150.jpg"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/Chartbusters2021English_20211201172126_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/sample-img.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="img-box"><img src="sample-image/MostSearchedSongsEnglish_20220208180035_150x150.jpg" alt="sample-img"/><span>Lorem ipsum dolor sit amet.</span></div>
+                    </div>
+                </div>
+                <div id="empty-div"></div>
+
+                <section id="footer-page">
+                    <div id="short-cuts">
+                        <div id="top-artists">
+                            <ul>  
+                                <h5>TOP ARTISTS</h5>
+                                <li>Neha Kakkar</li>
+                                <li>Arijit Singh</li>
+                                <li>Badshah</li>
+                                <li>Atif Aslam</li>
+                                <li>Justin Bieber</li>
+                                <li>Himesh Reshammiya</li>
+                                <li>Lata Mangeshkar</li>
+                                <li>Diljit Dosanjh</li>
+                                <li>Ed Sheeran</li>
+                                <li>Shreya Ghoshal</li>
+                            </ul>
+                        </div>
+                        <div id="top-actors">
+                            <ul>
+                                <h5>TOP ACTORS</h5>
+                                <li>Salman Khan Songs</li>
+                                <li>Allu Arjun Songs</li>
+                                <li>Amitabh Bachchan Songs</li>
+                                <li>Varun Dhawan Songs</li>
+                            </ul>
+                            <div id="browse">
+                                <ul>
+                                    <h5>BROWSE</h5>
+                                    <li>New Releases</li>
+                                    <li>Featured Playlists</li>
+                                    <li>Weekly Top Songs</li>
+                                    <li>Top Artists</li>
+                                    <li>Top Charts</li>
+                                    <li>Top Radios</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="devotional-songs">
+                            <ul>
+                                <h5>DEVOTIONAL SONGS</h5>
+                                <li>Krishna Bhajan</li>
+                                <li>Mahamrityunjaya</li>
+                                <li>Mantra</li>
+                                <li>Ganesh Ji Ki Aarti</li>
+                                <li>Hanuman Chalisa</li>
+                                <li>Gayatri Mantra</li>
+                                <li>Mata Ke Bhajan</li>
+                                <li>Durga Chalisa</li>
+                                <li>Maiya Yashoda</li>
+                                <li>Bhakti Geet</li>
+                            </ul>
+                        </div>
+                        <div id="languages">
+                            <ul>
+                                <h5>LANGUAGE</h5>
+                                <li>Hindi Songs</li>
+                                <li>Punjabi Songs</li>
+                                <li>Bhojpuri Songs</li>
+                                <li>Tamil Songs</li>
+                                <li>Telugu Songs</li>
+                                <li>Kannada Songs</li>
+                                <li>Gujarati Songs</li>
+                                <li>Marathi Songs</li>
+                                <li>Odia Songs</li>
+                                <li>Rajasthani Songs</li>
+                                <li>Haryanvi Songs</li>
+                                <li>Assamese Songs</li>
+                                <li>Malayalam Songs</li>
+                                <li>Bengali Songs</li>
+                            </ul>
+                        </div>
+                        <div id="artist-original">
+                            <ul>
+                                <h5>ARTIST ORIGINALS</h5>
+                                <li>Zaeden - Dooriyan</li>
+                                <li>Raghav - Sufi</li>
+                                <li>SIXK - Dansa</li>
+                                <li>Siri - My Jam</li>
+                                <li>Lost Stories, "Mai Ni Meriye"</li>
+                            </ul>
+                        </div>
+                        <div id="company">
+                            <ul>
+                                <h5>COMPANY</h5>
+                                <li>About Us</li>
+                                <li>Culture</li>
+                                <li>Blog</li>
+                                <li>Jobs</li>
+                                <li>Press</li>
+                                <li>Advertise</li>
+                                <li>Terms & Privacy</li>
+                                <li>Help & Support</li>
+                                <li>Grievances</li>
+                                <li>Artist Originals</li>
+                                <li>OnRecord</li>
+                                <li>JioSaavn Artist Insights</li>
+                                <li>JioSaavn YourCast</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="version">
+                        <ul>
+                            <li>JioSaavn Pro</li>
+                            <li>JioSaavn for iOS</li>
+                            <li>JioSaavn for Android</li>
+                            <li>New Releases</li>
+                            <li>Sitemap</li>
+                        </ul>
+                    </div>
+                    <div id="contact">
+                        <div id="copy-right">
+                            <i class="fa-solid fa-copyright"></i>
+                            <span>2022 Saavn Media Pvt Ltd.</span>
+                        </div>
+                        <div id="social-media">
+                            <span>FOLLOW US</span>
+                            <i class="fa-brands fa-facebook-square"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin"></i>  
+                        </div>
+                    </div>
+                </section>
+                <div id="empty-div"></div>            
+            </section>
+        </main>
+        
+        <section id="music-controls">
+            <div id="music-bar">
+                <div id="music-bar-left">
+                    <div id="song-img-icon">
+                        <!-- <img src="https://c.saavncdn.com/629/Arabic-Kuthu-From-Beast--Tamil-2022-20220214120146-500x500.jpg" alt="Arabic Kuthu - Halamithi Habibo (From &quot;Beast&quot;)"> -->
+                        <!-- <img src="sample-image/sample-img.jpg" alt="sample-img" /> -->
+                        <img src="sample-image/Thangameenkal-Tamil-2013-20190822133709-500x500.jpg" />
+                    </div>
+                    <div id="Song info">
+                        <span>Song info<span><br/>
+                        <span>Lorem ipsum dolor sit amet Lorem ipsum dolor...</span>
+                    </div>   
+                </div>
+                <div id="music-bar-center">
+                    <!-- <i class="fa-solid fa-arrows-rotate"></i> -->
+                    <i class="fa-solid fa-retweet"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+                <div id="music-bar-right">
+                    <span>0.00/4.43</span>
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <!-- <i class="fa-solid fa-arrows-up-down"></i> -->
+                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+            </div>
+        </section>
+        
+    </section>
+</body>
+</html>
