@@ -8,7 +8,7 @@ body{
 /* ********* nav-bar ********** */
 nav{
     width: 100%;
-    height: 86px;
+    height: 64px;
     background-color: white;
     display: flex;
     justify-content: space-around;
@@ -16,13 +16,13 @@ nav{
     position:fixed;
     top:0px;
     left: -1px;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     z-index: 10;  
-    border: solid lightgray 2px;
+    border: solid lightgray 1px;
 }
 /* ************* logo ************ */
 #logo{
-    width: 200px;
+    width: 150px;
     height: 80%;
     margin-top: 24px;
     padding: 10px;
@@ -70,7 +70,7 @@ nav ul li i{
 /* **************  search-bar ************** */
 #search-bar{
     width: 46%;
-    height: 50%;
+    height: 46%;
     background-color:lightcoral ;
     color: white;
     border-radius: 24px;
@@ -78,7 +78,7 @@ nav ul li i{
     justify-content: center;
     align-items: center;
     cursor: text;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .fa-magnifying-glass{
     color:aqua;
@@ -92,26 +92,92 @@ nav ul li i{
     color: white;
     cursor: text;
 }
+
+/*  ******* music control bar ******* */
+#music-bar{
+    width:100%;
+    height: 70px;
+    background-color: aliceblue;
+    color: #3E3E3E;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 15;
+    border-top: lightgray solid 1px;
+}
+/* *************** music bar left ********  */
+#music-bar-left{
+    width: 25%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+}
+#music-bar-left span{
+    font-size: 13px;
+    cursor: pointer;
+}
+#song-img-icon img{
+    max-width: 52px;
+    max-height: 52px;
+    cursor: pointer;   
+}
+/* *********** control buttons center *********** */
+#music-bar-center{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    letter-spacing: 26px;
+}
+#music-bar-center i{
+    color: gray;
+    cursor: pointer;
+}
+/* ********** music bar right ********* */
+#music-bar-right{
+    width: 20%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#music-bar-right span{
+    font-size: 14px;
+    cursor: pointer;
+}
+#music-bar-right i{
+    color: gray;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+
 /* ********** main-page *********** */
 #main-page{
     width: 100%;
     height: 100%;
     display: inline-block;
     position: absolute;
-    top: 75px;
+    top: 64px;
     left: 0;
 }
 
 /* ********** aside ******* */
 aside{
-    min-width: 238px;
+    min-width: 160px;
     height: 100vh;
     background-color: white;
     display: block;
     position: fixed;
-    font-size: 1.3rem;
-    padding: 30px;
-    padding-top: 60px;
+    font-size: 1rem;
+    padding: 25px;
+    padding-top: 40px;
 }
 
 #library ul{
@@ -130,43 +196,47 @@ aside{
     color: #2BC5B4;
 }
 #add-playlist{
-    height:40px;
-    width:200px;
+    height:26px;
+    width:150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid #2BC5B4 2px;
-    border-radius: 20px;
-    margin-left: 25px;
+    border: solid #2BC5B4 1px;
+    border-radius: 18px;
+    margin-left: 30px;   
 }
 #add-playlist a{
     text-decoration: none;
     color: #2BC5B4;
 }
-/* #add-playlist a:hover{
-    /* box-shadow: rgba(146, 228, 194, 0.56) 50px 50px 50px 50px; */
-/* }  */
+#add-playlist:hover{
+    box-shadow: 0 0 10px #2BC5B4;
+} 
+#add-playlist a:hover{
+    color:#3E3E3E;
+    font-size: 1.2rem;
+}
 
 /* ******** main container *************/
 #main-container{
-    width: 83%;
+    width: 82%;
     height: 100%;
     position: absolute;
-    left: 300px;    
+    left: 240px;    
 }
 #main-container h1{
     cursor: text;
     padding-left: 10px;
-    font-size: 24px;
+    font-size: 18px;
     color: red;
 }
 #empty-div{
     width: 100%;
-    height: 160px;
+    height: 120px;
 }
 #trending , #top-charts , #new-release , #editorial-picks{
     width: 100%;
-    height: 500px;
+    height: 380px;
     /* background-color:rgb(238, 221, 238); */
     background-color: white;
     display: flex;
@@ -174,20 +244,21 @@ aside{
     justify-content: space-around;
     align-items: flex-start; 
     position: relative;
+    font-size: 12px;
 }
 
 .img-box{
-    width: 180px;
-    height: 200px;
+    width: 130px;
+    height: 150px;
     text-align: center; 
     color: gray;
     cursor: pointer;
 }
 #main-container img{
-    max-width:150px;
-    max-height: 150px;
+    max-width:110px;
+    max-height: 110px;
     background-color:#2BC5B4;
-    border: solid #2BC5B4 2px;   
+    border: solid #2BC5B4 1px;   
 }
 #trending-row-1, #trending-row-2 {
     display: flex;
@@ -198,8 +269,8 @@ aside{
 /* *********** footer ********** */
 #footer-page{
     width: 100%;
-    height: 500px;
-    font-size: 1.1rem;
+    height: 400px;
+    font-size: 13px;
 }
 #footer-page h5{
     cursor: text;
@@ -213,7 +284,7 @@ aside{
 }
 #short-cuts{
     width:100%;
-    height: 250px;
+    height: 200px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -222,10 +293,10 @@ aside{
 
 #version{
     width: 100%;
-    height: 150px;
+    height: 100px;
     color: black;
     position: relative;
-    top: 150px;
+    top: 100px;
 }
 #version ul{
     display: flex;
@@ -237,7 +308,7 @@ aside{
 /* ********* contact *********** */
 #contact{
     width: 100%;
-    height: 300px;
+    height: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -246,8 +317,8 @@ aside{
 }
 #contact #copy-right{
     width: 50%;
-    margin-left: 30px;
-    font-size: 1.15rem; 
+    margin-left: 20px;
+    font-size: 1rem; 
     cursor: text;
 }
 #contact #social-media{
@@ -255,10 +326,10 @@ aside{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 1rem; 
+    font-size: 0.8rem; 
 }
 #contact #social-media i{
-    font-size: 32px;
+    font-size: 26px;
     cursor: pointer;
 }
 #contact #social-media  .fa-facebook-square{
@@ -275,70 +346,6 @@ aside{
 }
 #contact #social-media  .fa-linkedin{
     color: #0077B5 ;
-}
-
-/*  ******* music control bar ******* */
-#music-bar{
-    width:100%;
-    height: 100px;
-    background-color: aliceblue;
-    color: #3E3E3E;
-    position: fixed;
-    bottom: 0px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 15;
-}
-/* *************** music bar left ********  */
-#music-bar-left{
-    width: 25%;
-    height: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: black;
-}
-#music-bar-left span{
-    font-size: 18px;
-    cursor: pointer;
-}
-#song-img-icon img{
-    padding: 10px;
-    max-width: 64px;
-    max-height: 64px;
-    cursor: pointer;   
-}
-/* *********** control buttons center *********** */
-#music-bar-center{
-    width: 50%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 36px;
-    letter-spacing: 36px;
-}
-#music-bar-center i{
-    color: gray;
-    cursor: pointer;
-}
-/* ********** music bar right ********* */
-#music-bar-right{
-    width: 20%;
-    height: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-#music-bar-right span{
-    font-size: 18px;
-    cursor: pointer;
-}
-#music-bar-right i{
-    color: gray;
-    cursor: pointer;
-    font-size: 30px;
 }
 
 /* ***** to be add and continue(on going process.....) ********** */
